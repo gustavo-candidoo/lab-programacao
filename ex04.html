@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<script>
+    let a = Number(prompt("Valor de a: "))
+    if(a == 0){
+        console.log("Não é uma equação de 2o grau.")
+    }
+    else{
+        let b = Number(prompt("Valor de b: "))
+        let c = Number(prompt("Valor de c: "))
+
+        let delta = calcularDelta(a, b, c)
+        if(delta < 0){
+            console.log("A equação não tem raíz real.")
+        }
+        else{
+            let raiz = calcularRaiz(a, b, delta)
+                console.log(raiz)
+        }
+    }
+
+    //função para calcular e retornar o valor do delta
+    function calcularDelta(a, b, c){
+        return b * b - 4 * a * c
+    }
+
+    //função para calcular e retornar as raízes da equação do 2o grau
+    function calcularRaiz(a, b, delta){
+        let raiz = new Array(2)
+
+        raiz[0] = (-b + Math.sqrt(delta)) / (2 * a)
+        raiz[1] = (-b - Math.sqrt(delta)) / (2 * a)
+
+        return raiz
+    }
+</script>

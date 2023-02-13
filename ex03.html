@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<script>
+    let n1 = Number(prompt("Digite um valor inteiro: "))
+    let n2 = Number(prompt("Digite um valor inteiro: "))
+    let n3 = Number(prompt("Digite um valor inteiro: "))
+    let maior = 0
+
+    function maiorr(n1, n2, n3){
+        if(n1 > n2 && n1 > n3){
+            maior = n1
+        }
+        else if(n2 > n1 && n2 > n3){
+            maior = n2
+        }
+        else if(n3 > n1 && n3 > n2){
+            maior = n3
+        }
+        return true
+    }
+
+    let ok = maiorr(n1, n2, n3)
+    if(ok == true){
+        console.log("O maior valor é "+maior)
+    }
+    
+
+</script>
