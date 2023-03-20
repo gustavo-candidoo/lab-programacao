@@ -1,34 +1,19 @@
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <label for="">Altura (m)</label>
+    <input type="text" id="altura">
+    <br>
+    <button onclick="calcular()">Calcular</button>
+    <p id="variancia"></p>
+    <p id="desvio"></p>
 
-<script>
-    let lista = [100, 52, 63, 32, 21, 14, 47, 88, 99, 71]
-    
-    preencher(lista)
-    document.write("<h1>Antes da inversão</h1><br>")
-    imprimir(lista)
-    inverter(lista)
-    document.write("<h1>Depois da inversão</h1>")
-    imprimir(lista)
-
-    function inverter(lista){
-        let aux
-        for(let i = 0; i < lista.length / 2; i++){
-            aux = lista[i]
-            lista[i] = lista[lista.length - 1 - i]
-            lista[lista.length - 1 - i] = aux
-        }
-    }
-    
-
-    function preencher(lista){
-        for(let i = 0; i < lista.length; i++){
-            lista[i] = Math.round(Math.random() * 100)
-        }
-    }
-
-    function imprimir(lista){
-        for(let i = 0; i < lista.length; i++){
-            document.write(lista[i] + "<br>")
-        }
-    }
-</script>
+    <script src="ex06.js"></script>
+</body>
+</html>
