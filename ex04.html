@@ -1,36 +1,32 @@
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <label>Nome:</label>
+    <input type="text" id="nome"><br>
+    <label>Você é a favor de ter aula na unidade I?</label><br>
+    <input type="radio" id="sim" name="pesquisa" value="sim">
+    <label>Sim</label>
+    <input type="radio" id="nao" name="pesquisa" value="nao">
+    <label>Não</label>
+    <br>
+    <br>
+    <button onclick="enviar()">Enviar</button>
+    <p id="por_sim"></p>
+    <p id="por_nao"></p>
+    <br>
+    <h2>Lista de alunos a favor</h2>
+    <p id="lista_favor"></p>
+    <br>
+    <h2>Lista de alunos contra</h2>
+    <p id="lista_contra"></p>
 
-<script>
-    let a = Number(prompt("Valor de a: "))
-    if(a == 0){
-        console.log("Não é uma equação de 2o grau.")
-    }
-    else{
-        let b = Number(prompt("Valor de b: "))
-        let c = Number(prompt("Valor de c: "))
-
-        let delta = calcularDelta(a, b, c)
-        if(delta < 0){
-            console.log("A equação não tem raíz real.")
-        }
-        else{
-            let raiz = calcularRaiz(a, b, delta)
-                console.log(raiz)
-        }
-    }
-
-    //função para calcular e retornar o valor do delta
-    function calcularDelta(a, b, c){
-        return b * b - 4 * a * c
-    }
-
-    //função para calcular e retornar as raízes da equação do 2o grau
-    function calcularRaiz(a, b, delta){
-        let raiz = new Array(2)
-
-        raiz[0] = (-b + Math.sqrt(delta)) / (2 * a)
-        raiz[1] = (-b - Math.sqrt(delta)) / (2 * a)
-
-        return raiz
-    }
-</script>
+    
+    <script src="ex04.js"></script>
+</body>
+</html>
