@@ -4,7 +4,7 @@
 
 <h3 align="center">Repositório criado afim de compartilhar o código dos exercícios propostos em aula na disciplina de laboratório de programação.</h3>
 
-###Módulo I
+<h4>Módulo I</h4>
 
 <p>Modularização de Algoritmos
 
