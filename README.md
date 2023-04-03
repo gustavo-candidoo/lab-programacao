@@ -6,7 +6,7 @@
 
 ### Módulo I
 
-<p>Modularização de Algoritmos
+>Modularização de Algoritmos
 
 ### Módulo II
 
