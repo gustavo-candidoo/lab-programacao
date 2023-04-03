@@ -4,10 +4,14 @@
 
 >Repositório criado afim de compartilhar o código dos exercícios propostos em aula na disciplina de laboratório de progrmação.
 
-## Módulo II
+### Módulo II
 
 >HTML + JavaScript
 
-## Módulo III
+### Módulo III
 
 >Array Bidimensional (matriz)
+
+### Módulo IV
+
+>Manipulação de String
