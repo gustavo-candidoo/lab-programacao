@@ -1,6 +1,6 @@
 <h1 align="center", color:red>Laboratório de Programação</h1>
  
-<h2 align="center">Prof Antonio Selmini - 2 semestre - ESPM SP</h2>
+<h2 align="center">Prof Antonio Marcos Selmini - 2 semestre - ESPM SP</h2>
 
 <h3 align="center">Repositório criado afim de compartilhar o código dos exercícios propostos em aula na disciplina de laboratório de programação.</h3>
 
